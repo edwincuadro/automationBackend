@@ -1,2 +1,4 @@
-.idea/
-/target/
+#ignorar .idea
+.idea /
+#ignorar target
+/ target /
