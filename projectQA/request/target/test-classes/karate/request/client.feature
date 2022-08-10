@@ -6,7 +6,7 @@ Feature: Get service client
   Background: consuming service
     * url url
 
-    Scenario: Check the service GET method
-      Given path 'users', '2'
-      When method get
-      Then status 200
+  Scenario: Check the service GET method
+    Given path 'users', '2'
+    When method get
+    Then status 200
