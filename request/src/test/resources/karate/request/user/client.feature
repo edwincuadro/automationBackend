@@ -25,3 +25,18 @@ Feature: Get service client
         | 1996    |
         | "#&%?." |
         | "Edwin" |
+        |  "  "   |
+
+  Scenario Outline: Validate the email using unsopported data types
+
+    Given path 'users',<email>
+    When method get
+    Then status 404
+
+    Examples:
+      | email     |
+      |  12345    |
+      | "_?+{"    |
+      | "Daniela" |
+
+
