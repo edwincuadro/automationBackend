@@ -15,3 +15,16 @@ Feature: Create a new user
     When method post
     Then status 201
     And match response == responseClient
+
+
+  Scenario Outline: Validate the id using unsupported data types.
+
+    Given path 'users'
+    And request <id>
+    When method post
+    Then status 200
+
+    Examples:
+      | id         |
+      |  12345.123 |
+      | "@##$"     |
