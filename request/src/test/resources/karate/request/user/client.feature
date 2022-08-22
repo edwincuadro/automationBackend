@@ -25,3 +25,4 @@ Feature: Get service client
         | 1996    |
         | "#&%?." |
         | "Edwin" |
+
