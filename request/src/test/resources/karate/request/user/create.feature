@@ -14,6 +14,4 @@ Feature: Create a new user
     And request requestCreate
     When method post
     Then status 201
-    * match response == responseClient
-
-
+    And match response == responseClient

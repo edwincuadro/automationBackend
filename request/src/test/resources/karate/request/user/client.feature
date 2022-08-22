@@ -12,8 +12,8 @@ Feature: Get service client
     When method get
     Then status 200
     And match response == responseClient
-    * assert response.support.text == "To keep ReqRes free, contributions towards server costs are appreciated!"
-    * assert response.data.email == email
+    And assert response.support.text == "To keep ReqRes free, contributions towards server costs are appreciated!"
+    And assert response.data.email == email
 
 
     Scenario Outline: User that don't exist
@@ -25,4 +25,3 @@ Feature: Get service client
         | 1996    |
         | "#&%?." |
         | "Edwin" |
-

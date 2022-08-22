@@ -8,6 +8,3 @@ public class CreateRunner {
         return Karate.run("classpath:karate/request/user/create.feature").relativeTo(getClass());
     }
 }
-
-
-

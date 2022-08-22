@@ -8,5 +8,3 @@ public class ClientRunner {
         return Karate.run("classpath:karate/request/user/client.feature").relativeTo(getClass());
     }
 }
-
-
