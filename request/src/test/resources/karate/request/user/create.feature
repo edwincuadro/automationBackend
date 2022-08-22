@@ -8,7 +8,7 @@ Feature: Create a new user
 
   Scenario: Check the services by POST method
     * def requestCreate = {"name": '#(name)',"job": '#(job)'}
-    * def responseClient = read('classpath:karate/request/responseCreate.json')
+    * def responseClient = read('classpath:karate/request/user/responseCreate.json')
 
     Given path 'users'
     And request requestCreate
