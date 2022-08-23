@@ -22,7 +22,7 @@ Feature: Create a new user
     Given path 'users'
     And request <id>
     When method post
-    Then status 200
+    Then status 201
 
     Examples:
       | id         |
