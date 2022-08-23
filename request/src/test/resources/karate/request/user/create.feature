@@ -8,10 +8,23 @@ Feature: Create a new user
 
   Scenario: Check the services by POST method
     * def requestCreate = {"name": '#(name)',"job": '#(job)'}
-    * def responseGet = read('classpath:karate/request/responseCreate.json')
+    * def responseClient = read('classpath:karate/request/user/responseCreate.json')
 
     Given path 'users'
     And request requestCreate
     When method post
     Then status 201
-    * match response == responseGet
+    And match response == responseClient
+
+
+  Scenario Outline: Validate the id using unsupported data types.
+
+    Given path 'users'
+    And request <id>
+    When method post
+    Then status 201
+
+    Examples:
+      | id         |
+      |  12345.123 |
+      | "@##$"     |
