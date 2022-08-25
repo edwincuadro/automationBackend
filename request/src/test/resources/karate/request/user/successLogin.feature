@@ -28,4 +28,3 @@ Feature: Log in into website
         | 123     |
         | "#$%&"  |
         | "#null" |
-
