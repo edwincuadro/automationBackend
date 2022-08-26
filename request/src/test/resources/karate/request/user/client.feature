@@ -16,7 +16,7 @@ Feature: Get service client
     And assert response.data.email == email
 
 
-    Scenario Outline: User that don't exist
+    Scenario Outline: User that doesn't exist
       Given path 'users', <idUser>
       When method get
       Then status 404
