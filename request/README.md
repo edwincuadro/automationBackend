@@ -7,8 +7,8 @@ pretends to bring us experience and knowledge in the QA automation area, impleme
 good practices and earning test skills.
 
 **_Notes:_**
-**All project work is on the Develop branch
-The project was created and executed into a windows system.**
+1. [ ] **All project work is on the Develop branch**
+2. [ ] **The project was created and executed into a windows system.**
 
 **Features:**
 We have different features into each endpoint and request method, such as:
